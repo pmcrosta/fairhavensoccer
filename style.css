@@ -1,0 +1,248 @@
+/* --- Global Styles & Color Palette --- */
+:root {
+    --primary-blue: #0b52a3;   /* Rich royal blue from logo embroidery */
+    --wave-blue: #1d70b8;      /* Mid-tone wave accent blue */
+    --light-bg: #f5f8fc;       /* Very soft, clean athletic grey-blue background */
+    --dark-text: #223345;      /* High contrast dark slate for readable body text */
+    --white: #ffffff;
+    --accent-gold: #f4b400;    /* Muted accent for warnings/deadlines */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--dark-text);
+    background-color: var(--light-bg);
+    line-height: 1.6;
+}
+
+/* --- Layout Container --- */
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Header & Branding --- */
+header {
+    background-color: var(--white);
+    border-bottom: 4px solid var(--primary-blue);
+    padding: 20px 0;
+}
+
+.header-layout {
+    display: table;
+    width: 100%;
+}
+
+.brand-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.brand-banner {
+    max-height: 75px;
+    display: block;
+}
+
+/* Fallback stylized header if image isn't loaded */
+.brand-fallback h1 {
+    font-family: "Times New Roman", Georgia, serif;
+    color: var(--primary-blue);
+    letter-spacing: 1px;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+/* --- Navigation Bar --- */
+nav {
+    background-color: var(--primary-blue);
+}
+
+nav ul {
+    list-style: none;
+    display: block;
+    text-align: left;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    color: var(--white);
+    text-decoration: none;
+    padding: 14px 20px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: background 0.2s ease;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: var(--wave-blue);
+}
+
+/* --- Main Content Layout --- */
+main {
+    padding: 40px 0;
+    background-color: var(--white);
+    min-height: 500px;
+}
+
+h2 {
+    font-family: "Times New Roman", Georgia, serif;
+    color: var(--primary-blue);
+    font-size: 26px;
+    margin-bottom: 20px;
+    border-left: 5px solid var(--wave-blue);
+    padding-left: 12px;
+}
+
+h3 {
+    color: var(--primary-blue);
+    margin: 20px 0 10px 0;
+    font-size: 19px;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+ul.content-list {
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+ul.content-list li {
+    margin-bottom: 8px;
+}
+
+/* --- Component Callouts & Cards --- */
+.hero-section {
+    background: linear-gradient(rgba(11, 82, 163, 0.05), rgba(29, 112, 184, 0.08));
+    padding: 35px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(11, 82, 163, 0.1);
+}
+
+.hero-layout {
+    display: table;
+    width: 100%;
+}
+
+.hero-text {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.hero-logo-cell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 160px;
+    text-align: right;
+}
+
+.hero-logo {
+    max-width: 140px;
+    border-radius: 50%;
+}
+
+.card-grid {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 20px 0;
+    margin: 25px -20px;
+}
+
+.card {
+    display: table-cell;
+    background: var(--light-bg);
+    padding: 25px;
+    border-radius: 6px;
+    border-top: 4px solid var(--wave-blue);
+    vertical-align: top;
+}
+
+.alert-box {
+    background-color: #fff9e6;
+    border-left: 5px solid var(--accent-gold);
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    border-radius: 0 4px 4px 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: var(--wave-blue);
+}
+
+/* --- Field Listings Map Layout --- */
+.field-entry {
+    background-color: var(--light-bg);
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--dark-text);
+    color: #cbd5e1;
+    padding: 30px 0;
+    font-size: 14px;
+    border-top: 5px solid var(--wave-blue);
+}
+
+footer a {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+footer .footer-contact {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .card-grid, .hero-layout, .header-layout {
+        display: block !important;
+        width: 100% !important;
+    }
+    .card {
+        display: block !important;
+        margin-bottom: 20px;
+    }
+    .hero-logo-cell {
+        display: block !important;
+        text-align: left !important;
+        margin-top: 20px;
+    }
+    nav ul li {
+        display: block;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+}
