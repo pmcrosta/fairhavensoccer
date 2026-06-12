@@ -31,9 +31,14 @@ body {
 
 /* --- Header & Branding --- */
 header {
-    background-color: var(--white);
-    border-bottom: 4px solid var(--primary-blue);
-    padding: 20px 0;
+    background-color: #f4f2f7;
+    padding: 15px 0; /* Keeps a nice spacing around your logo */
+    width: 100%;
+}
+
+/* Optional: If the image ever fails to load, make sure the fallback text is dark enough to read on the light gray background */
+.brand-fallback h1 {
+    color: #1a365d; /* A nice dark corporate/soccer blue, or change to #000000 for black */
 }
 
 .header-layout {
