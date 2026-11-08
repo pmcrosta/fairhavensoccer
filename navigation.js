@@ -8,9 +8,9 @@ document.addEventListener("DOMContentLoaded", function() {
         { name: "Home", url: "index.html" },
         { name: "Registration", url: "registration.html" },
         { name: "Parent Info", url: "parent-info.html" },
-        { name: "About Us", url: "about.html" },
         { name: "Coach Info", url: "coaching.html" },
-        { name: "Field Locations", url: "fields.html" }
+        { name: "Field Locations", url: "fields.html" },
+        { name: "About Us", url: "about.html" }
     ];
 
     // 2. Detect the current page filename to automatically highlight the active tab

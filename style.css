@@ -158,7 +158,8 @@ ul.content-list li {
 
 .hero-logo {
     max-width: 140px;
-    border-radius: 50%;
+    height: auto;
+    filter: drop-shadow(0 4px 10px rgba(8, 51, 121, 0.15));
 }
 
 .card-grid {
@@ -177,6 +178,32 @@ ul.content-list li {
     border-radius: 6px;
     border-top: 4px solid var(--wave-blue);
     vertical-align: top;
+}
+
+.card-photo {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    display: block;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.inline-feature-split {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 24px;
+    align-items: center;
+    margin: 15px 0 25px 0;
+}
+
+.inline-feature-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: block;
 }
 
 .alert-box {
@@ -236,6 +263,9 @@ footer .footer-contact {
     .card-grid, .hero-layout, .header-layout {
         display: block !important;
         width: 100% !important;
+    }
+    .inline-feature-split {
+        grid-template-columns: 1fr;
     }
     .card {
         display: block !important;

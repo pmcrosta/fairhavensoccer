@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brand & Media Kit - Fair Haven Rec Soccer</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .brand-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            margin: 25px 0 35px 0;
+        }
+        .asset-card {
+            background: var(--light-bg);
+            border: 1px solid rgba(11, 82, 163, 0.15);
+            border-radius: 6px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .asset-preview {
+            height: 160px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            padding: 15px;
+            margin-bottom: 15px;
+            border: 1px solid #e2e8f0;
+        }
+        .asset-preview.light-checker {
+            background-color: #ffffff;
+            background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+            background-size: 12px 12px;
+        }
+        .asset-preview.dark-bg {
+            background-color: #083379;
+        }
+        .asset-preview img {
+            max-width: 100%;
+            max-height: 130px;
+            height: auto;
+        }
+        .swatch-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin: 20px 0 35px 0;
+        }
+        .swatch-card {
+            border: 1px solid #dde5ef;
+            border-radius: 6px;
+            overflow: hidden;
+            background: #fff;
+        }
+        .swatch-color {
+            height: 85px;
+        }
+        .swatch-info {
+            padding: 12px 15px;
+            font-size: 14px;
+        }
+        .swatch-info strong {
+            display: block;
+            font-size: 15px;
+            margin-bottom: 4px;
+            color: var(--dark-text);
+        }
+        .swatch-info code {
+            display: block;
+            font-family: monospace;
+            color: #475569;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header-layout">
+                <div class="brand-wrapper">
+                    <img src="images/fhsoccer2.png" alt="Fair Haven Soccer" class="brand-banner" onerror="this.style.display='none'; document.getElementById('fallback-title').style.display='block';">
+                    <div id="fallback-title" class="brand-fallback" style="display:none;">
+                        <h1>Fair Haven Soccer</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SHARED NAVIGATION PLACEHOLDER -->
+    <nav id="main-nav"></nav>
+    <script src="navigation.js"></script>
+
+    <main>
+        <div class="container">
+            <h2>Brand Guidelines &amp; Media Kit</h2>
+            <p>Official logos, color swatches, and typography standards for Fair Haven Rec Soccer. These assets are provided for uniform printers, community sponsors, tournament partners, and league volunteers.</p>
+
+            <h3>1. Official Logos &amp; Lockups</h3>
+            <p>Always maintain clear space around the crest and avoid stretching, cropping, or recoloring the shield. Use the white knockout versions when printing on dark navy or royal blue apparel.</p>
+
+            <div class="brand-grid">
+                <div class="asset-card">
+                    <div>
+                        <div class="asset-preview light-checker">
+                            <img src="images/fhsoccer_logoonly.png" alt="Primary Crest Logo">
+                        </div>
+                        <h4>Primary Shield Crest</h4>
+                        <p style="font-size: 14px; margin-top: 6px;">Full-color shield crest (<code>815 &times; 900 px</code>, transparent PNG). Ideal for uniforms, patches, and square/vertical placements.</p>
+                    </div>
+                    <a href="images/fhsoccer_logoonly.png" download="FH-Soccer-Crest-Color.png" class="btn" style="text-align: center;">Download PNG</a>
+                </div>
+
+                <div class="asset-card">
+                    <div>
+                        <div class="asset-preview dark-bg">
+                            <img src="images/fhsoccer_crest_white.png" alt="White Knockout Crest Logo">
+                        </div>
+                        <h4>White Knockout Crest</h4>
+                        <p style="font-size: 14px; margin-top: 6px;">Single-color white knockout (<code>815 &times; 900 px</code>, transparent PNG) for screen printing or embroidery on dark navy/blue gear.</p>
+                    </div>
+                    <a href="images/fhsoccer_crest_white.png" download="FH-Soccer-Crest-White.png" class="btn" style="text-align: center;">Download PNG</a>
+                </div>
+
+                <div class="asset-card">
+                    <div>
+                        <div class="asset-preview light-checker">
+                            <img src="images/fhsoccer2.png" alt="Horizontal Banner Logo">
+                        </div>
+                        <h4>Horizontal Banner (Primary)</h4>
+                        <p style="font-size: 14px; margin-top: 6px;">Crest + wordmark lockup (<code>1145 &times; 230 px</code>, transparent PNG) for website headers, letterheads, and banners on light backgrounds.</p>
+                    </div>
+                    <a href="images/fhsoccer2.png" download="FH-Soccer-Banner-Color.png" class="btn" style="text-align: center;">Download PNG</a>
+                </div>
+
+                <div class="asset-card">
+                    <div>
+                        <div class="asset-preview dark-bg">
+                            <img src="images/fhsoccer_banner_white.png" alt="Horizontal Banner White">
+                        </div>
+                        <h4>Horizontal Banner (Dark BG)</h4>
+                        <p style="font-size: 14px; margin-top: 6px;">Crest + white wordmark lockup (<code>1145 &times; 230 px</code>, transparent PNG) for dark headers and signage.</p>
+                    </div>
+                    <a href="images/fhsoccer_banner_white.png" download="FH-Soccer-Banner-White.png" class="btn" style="text-align: center;">Download PNG</a>
+                </div>
+            </div>
+
+            <h3>2. Official Color Palette</h3>
+            <p>Our palette is anchored by the deep nautical navy and royal wave blues of the Fair Haven crest paired with crisp white.</p>
+
+            <div class="swatch-grid">
+                <div class="swatch-card">
+                    <div class="swatch-color" style="background-color: #083379;"></div>
+                    <div class="swatch-info">
+                        <strong>Crest Navy (Primary Shield)</strong>
+                        <code>HEX: #083379</code>
+                        <code>RGB: 8, 51, 121</code>
+                        <code>CMYK: 93, 58, 0, 53</code>
+                    </div>
+                </div>
+
+                <div class="swatch-card">
+                    <div class="swatch-color" style="background-color: #0f4c97;"></div>
+                    <div class="swatch-info">
+                        <strong>Crest Royal (Shield Border)</strong>
+                        <code>HEX: #0f4c97</code>
+                        <code>RGB: 15, 76, 151</code>
+                        <code>CMYK: 90, 50, 0, 41</code>
+                    </div>
+                </div>
+
+                <div class="swatch-card">
+                    <div class="swatch-color" style="background-color: #0b52a3;"></div>
+                    <div class="swatch-info">
+                        <strong>Web Primary Blue</strong>
+                        <code>HEX: #0b52a3</code>
+                        <code>RGB: 11, 82, 163</code>
+                        <code>CMYK: 93, 50, 0, 36</code>
+                    </div>
+                </div>
+
+                <div class="swatch-card">
+                    <div class="swatch-color" style="background-color: #1d70b8;"></div>
+                    <div class="swatch-info">
+                        <strong>Wave Accent Blue</strong>
+                        <code>HEX: #1d70b8</code>
+                        <code>RGB: 29, 112, 184</code>
+                        <code>CMYK: 84, 39, 0, 28</code>
+                    </div>
+                </div>
+
+                <div class="swatch-card">
+                    <div class="swatch-color" style="background-color: #f5f8fc; border-bottom: 1px solid #e2e8f0;"></div>
+                    <div class="swatch-info">
+                        <strong>Athletic Ice Grey (BG)</strong>
+                        <code>HEX: #f5f8fc</code>
+                        <code>RGB: 245, 248, 252</code>
+                        <code>CMYK: 3, 1, 0, 1</code>
+                    </div>
+                </div>
+            </div>
+
+            <h3>3. Typography</h3>
+            <ul class="content-list">
+                <li><strong>Wordmark &amp; Display Headings:</strong> Classic serif (<em>Noto Serif</em>, <em>Georgia</em>, or <em>Times New Roman</em>) set in uppercase with slight letter-spacing for the main "FAIR HAVEN SOCCER" banner, and title case for section headers.</li>
+                <li><strong>Body &amp; UI Copy:</strong> Clean system sans-serif (<em>-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif</em>) in Dark Slate (<code>#223345</code>) for high legibility on mobile and desktop screens.</li>
+                <li><strong>Jersey Back Sponsorships:</strong> Clean, bold sans-serif block lettering in contrasting single color (White on dark jerseys; Navy/Black on light jerseys).</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="footer-contact">Questions? Email us: <a href="mailto:fhnjrecsoccer@gmail.com">fhnjrecsoccer@gmail.com</a></p>
+            <p>&copy; 2026 Fair Haven Rec Soccer. All Rights Reserved. Managed locally in Fair Haven, NJ. &bull; <a href="brand.html">Brand &amp; Media Kit</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
