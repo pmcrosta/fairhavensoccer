@@ -269,6 +269,13 @@ footer .footer-contact {
 }
 
 /* --- Mobile & Tablet Responsive Layout --- */
+@media (max-width: 960px) and (min-width: 769px) {
+    nav ul li a {
+        padding: 14px 12px;
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 768px) {
     header {
         padding: 12px 0;
@@ -291,6 +298,15 @@ footer .footer-contact {
     nav ul li {
         border-bottom: 1px solid rgba(255, 255, 255, 0.12);
         border-right: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    nav ul li:nth-child(3n) {
+        border-right: none;
+    }
+
+    nav ul li:last-child:nth-child(3n + 1) {
+        grid-column: 1 / -1;
+        border-right: none;
     }
 
     nav ul li a {

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-N6XG39QD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Youth Sports Guide - Fair Haven Rec Soccer</title>
+    <link rel="stylesheet" href="style.css?v=3">
+    <link rel="stylesheet" href="local-sports.css?v=4">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header-layout">
+                <div class="brand-wrapper">
+                    <img src="images/fhsoccer2.png?v=2" alt="Fair Haven Soccer" class="brand-banner" onerror="this.style.display='none'; document.getElementById('fallback-title').style.display='block';">
+                    <div id="fallback-title" class="brand-fallback" style="display:none;">
+                        <h1>Fair Haven Soccer</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SHARED NAVIGATION PLACEHOLDER -->
+    <nav id="main-nav"></nav>
+    <script src="navigation.js?v=3"></script>
+
+    <main>
+        <div class="container sports-guide">
+            <h2>Fair Haven youth sports guide</h2>
+            <p class="guide-updated">Updated <time datetime="2026-11-14">November 14, 2026</time></p>
+            <p class="guide-intro">A reference directory for Pre-K through 8th grade recreational, school, and travel sports for Fair Haven kids.</p>
+
+            <div class="guide-disclaimer" role="note">
+                <strong>Community reference</strong>
+                <p>Fair Haven Rec Soccer volunteers compiled this guide for local families. Fair Haven Rec Soccer does not operate or endorse external organizations. Verify current registration dates, fees, and town eligibility rules directly on each program's website.</p>
+            </div>
+
+            <div class="guide-tabs" role="tablist" aria-label="Guide sections">
+                <button type="button" class="guide-tab is-active" role="tab" id="tab-directory" aria-controls="panel-directory" aria-selected="true" data-view="directory">Sport directory</button>
+                <button type="button" class="guide-tab" role="tab" id="tab-calendar" aria-controls="panel-calendar" aria-selected="false" data-view="calendar" tabindex="-1">Registration calendar</button>
+            </div>
+
+            <section id="panel-directory" class="guide-panel" role="tabpanel" aria-labelledby="tab-directory">
+                <div class="filter-bar" aria-label="Directory filters">
+                    <div class="filter-row">
+                        <div class="filter-field filter-search-field">
+                            <label for="filter-search">Search programs</label>
+                            <input type="search" id="filter-search" placeholder="Sport, club, town, or note">
+                        </div>
+                        <div class="filter-field">
+                            <label for="filter-grade">Grade band</label>
+                            <select id="filter-grade">
+                                <option value="all">All grades</option>
+                                <option value="Pre-K">Pre-K</option>
+                                <option value="K-2">Grades K-2</option>
+                                <option value="3-5">Grades 3-5</option>
+                                <option value="6-8">Grades 6-8</option>
+                            </select>
+                        </div>
+                        <div class="filter-field">
+                            <label for="filter-season">Season</label>
+                            <select id="filter-season">
+                                <option value="all">All seasons</option>
+                                <option value="Fall">Fall</option>
+                                <option value="Winter">Winter</option>
+                                <option value="Spring">Spring</option>
+                                <option value="Summer">Summer</option>
+                                <option value="Year-round">Year-round</option>
+                            </select>
+                        </div>
+                        <div class="filter-field">
+                            <label for="filter-gender">Gender</label>
+                            <select id="filter-gender">
+                                <option value="all">All genders</option>
+                                <option value="Co-ed">Co-ed only</option>
+                                <option value="Girls">Girls (includes co-ed)</option>
+                                <option value="Boys">Boys (includes co-ed)</option>
+                            </select>
+                        </div>
+                        <div class="filter-field">
+                            <label for="filter-pathway">Pathway</label>
+                            <select id="filter-pathway">
+                                <option value="all">All pathways</option>
+                                <option value="open-rec">Open rec</option>
+                                <option value="town-school-tryout">Town or school tryout</option>
+                                <option value="club-tryout">Club tryout</option>
+                                <option value="studio-clinic">Studio or clinic</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="filter-secondary">
+                        <div class="filter-toggles">
+                            <label class="toggle-check">
+                                <input type="checkbox" id="toggle-regional">
+                                <span>Include regional options (&gt;6 mi)</span>
+                            </label>
+                            <label class="toggle-check">
+                                <input type="checkbox" id="toggle-gated">
+                                <span>Include member or parish clubs</span>
+                            </label>
+                        </div>
+                        <div class="filter-status">
+                            <span id="results-count" class="results-count">Loading programs</span>
+                            <button type="button" id="reset-filters" class="btn-link" hidden>Reset filters</button>
+                        </div>
+                    </div>
+
+                    <p class="cost-legend">
+                        <span><strong>$</strong> Town rec</span>
+                        <span><strong>$$</strong> Town travel</span>
+                        <span><strong>$$$</strong> Private club or studio</span>
+                        <span><strong>$$$$</strong> Private club membership</span>
+                    </p>
+                </div>
+
+                <nav id="sport-jump" class="sport-jump" aria-label="Jump to sport"></nav>
+                <div id="sports-container" aria-live="polite"></div>
+
+                <noscript>
+                    <div class="alert-box">
+                        JavaScript is required to filter this interactive directory. Enable JavaScript to search and filter sports programs, or view registration windows on the <a href="registration.html">Registration</a> page.
+                    </div>
+                </noscript>
+            </section>
+
+            <section id="panel-calendar" class="guide-panel" role="tabpanel" aria-labelledby="tab-calendar" hidden>
+                <div id="calendar-traps" class="traps-grid"></div>
+                <div id="calendar-container"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="footer-contact">Questions? Email us: <a href="mailto:fhnjrecsoccer@gmail.com">fhnjrecsoccer@gmail.com</a></p>
+            <p>&copy; 2026 Fair Haven Rec Soccer. All Rights Reserved. Managed locally in Fair Haven, NJ. &bull; <a href="local-sports.html">Local Sports Guide</a> &bull; <a href="brand.html">Brand &amp; Media Kit</a></p>
+        </div>
+    </footer>
+
+    <script defer src="local-sports-data.js?v=4"></script>
+    <script defer src="local-sports.js?v=4"></script>
+</body>
+</html>
