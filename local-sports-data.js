@@ -139,15 +139,19 @@ window.FHRS_SPORTS_DATA = {
         {
             id: "soccer",
             name: "Soccer",
-            summary: "Inclusive in-town fall rec through Fair Haven Rec Soccer paired with nearby MOSA and EDP travel clubs.",
+            summary: "Inclusive in-town fall rec through Fair Haven Rec Soccer, partner clinics via Just Sports Training, and nearby MOSA and EDP travel clubs.",
             comparisons: [
                 {
                     title: "In-town rec (Fair Haven Rec Soccer)",
                     text: "No-cut volunteer league. K-2 players meet Saturdays at Fair Haven Fields (30 min skills, 30 min small-sided scrimmages); grades 3-8 add 1 weeknight practice and Saturday NMSA games against Eatontown, Little Silver, Long Branch, Red Bank, Rumson, Shore, Shrewsbury, and Tinton Falls."
                 },
                 {
+                    title: "Partner clinics and technical training",
+                    text: "Fair Haven Rec Soccer partner Just Sports Training (Red Bank and local fields) runs year-round Pre-K through 8th grade soccer clinics, Coerver Footskills, Pre-Travel, school's-out camps, and FC Monmouth Academy / Summer Invitational teams. The Fort Athletic Club (CAT) and USA Sport Group offer additional skills classes."
+                },
+                {
                     title: "Community travel clubs",
-                    text: "Peninsula SC, Rumson FC, Red Bank FC, Route 36 SC, Tinton Falls SC, and Monmouth United SC hold April-May tryouts for two-season Fall and Spring play in MOSA, MNJYSA, and EDP. Most pair parent team managers with paid professional practice trainers. Red Bank FC offers lower tuition than commercial academies."
+                    text: "Peninsula SC, Rumson FC, Red Bank FC, Tinton Falls SC, and Monmouth United SC hold April-May tryouts for two-season Fall and Spring play in MOSA, MNJYSA, and EDP. Most pair parent team managers with paid professional practice trainers. Red Bank FC offers lower tuition than commercial academies."
                 },
                 {
                     title: "Residency cap at Rumson FC",
@@ -192,6 +196,23 @@ window.FHRS_SPORTS_DATA = {
                     url: "https://fairhavensoccer.org",
                     secondaryUrl: { label: "NMSA League", url: "https://leagues.teamlinkt.com/nmsa/Home" },
                     note: "Kids register in Fair Haven Rec Soccer to play in the 10-town NMSA inter-town rec league."
+                },
+                {
+                    name: "Just Sports Training (JST Soccer)",
+                    subGroup: "Partner training",
+                    grades: ["Pre-K", "K-2", "3-5", "6-8"],
+                    gradeNote: "Ages 3-14 (Pre-K - 8th)",
+                    gender: ["Boys", "Girls", "Co-ed"],
+                    seasons: ["Year-round"],
+                    pathway: "studio-clinic",
+                    accessLabel: "Studio or clinic",
+                    registration: "Seasonal clinics, camps, and private training",
+                    commitment: "Fall/Winter/Spring clinics, Coerver Footskills, Pre-Travel, summer camps",
+                    cost: "$$-$$$",
+                    location: "Fair Haven area fields and 280 Route 35, Red Bank (~2.5 mi)",
+                    url: "https://just-sport.org",
+                    secondaryUrl: { label: "Register", url: "https://just-sport.playbookapi.com/programs/register/" },
+                    note: "Fair Haven Rec Soccer partner; also youth training partner for FC Monmouth and Greater Monmouth YMCA."
                 },
                 {
                     name: "USA Sport Group Soccer (FH Fields)",
@@ -270,21 +291,6 @@ window.FHRS_SPORTS_DATA = {
                     location: "Count Basie and East Side Park, Red Bank (~2-3 mi)",
                     url: "https://redbank-fc.org",
                     note: "Lower annual community travel tuition compared with commercial academies."
-                },
-                {
-                    name: "Route 36 Soccer Club",
-                    subGroup: "Travel",
-                    grades: ["K-2", "3-5", "6-8"],
-                    gradeNote: "U4-U18",
-                    gender: ["Boys", "Girls"],
-                    seasons: ["Fall", "Spring"],
-                    pathway: "club-tryout",
-                    accessLabel: "Club tryout",
-                    registration: "Spring and rolling",
-                    commitment: "1-2 practices/wk + MOSA or EDP games",
-                    cost: "$$$",
-                    location: "Oceanport municipal fields (~2.5-3.5 mi)",
-                    url: "https://www.oceanportboro.com/recreation"
                 },
                 {
                     name: "Tinton Falls Soccer Club",
@@ -371,6 +377,23 @@ window.FHRS_SPORTS_DATA = {
                     cost: "$$$",
                     location: "Capelli Sport Complex, 1659 Wayside Rd, Tinton Falls (~6-8 mi)",
                     url: "https://www.cedarstars.com"
+                },
+                {
+                    name: "FC Monmouth Academy (Just Sports Training)",
+                    subGroup: "Academy",
+                    grades: ["K-2", "3-5", "6-8"],
+                    gradeNote: "U8-U15+ and Summer Dev (ages 4-10)",
+                    gender: ["Boys", "Girls"],
+                    seasons: ["Fall", "Spring", "Summer"],
+                    pathway: "club-tryout",
+                    accessLabel: "Club tryout",
+                    registration: "Seasonal evaluations and summer registration",
+                    commitment: "Academy squads, Venezia USA U9-U14, and FC Monmouth Summer Invitational",
+                    cost: "$$$",
+                    location: "Red Bank and Monmouth County fields (~2.5-5 mi)",
+                    url: "https://just-sport.org/fc-monmouth-academy",
+                    secondaryUrl: { label: "Register", url: "https://just-sport.playbookapi.com/programs/register/" },
+                    note: "Operated by Fair Haven Rec Soccer partner Just Sports Training with semi-pro club FC Monmouth."
                 }
             ]
         },
@@ -410,8 +433,7 @@ window.FHRS_SPORTS_DATA = {
                     commitment: "1-2 sessions/wk (Dec - early Mar); equal play",
                     cost: "$",
                     location: "Fair Haven school gyms",
-                    url: "https://fairhavenbasketball.com",
-                    secondaryUrl: { label: "LeagueLineup", url: "https://www.leaguelineup.com/welcome.asp?url=fairhavenbasketball" }
+                    url: "https://fairhavenbasketball.com"
                 },
                 {
                     name: "Fair Haven Basketball (Two River Hoops)",
@@ -440,7 +462,8 @@ window.FHRS_SPORTS_DATA = {
                     commitment: "Games-only or games-plus-skills options",
                     cost: "$-$$",
                     location: "Red Bank gyms (~2.5 mi)",
-                    url: "https://www.redbanknj.org/210/Recreation-Programs",
+                    url: "https://www.redbanknj.org/191/Parks-Recreation",
+                    secondaryUrl: { label: "CommunityPass", url: "https://register.capturepoint.com/redbank" },
                     note: "Welcomes non-residents with staggered opening dates and added non-resident pricing."
                 },
                 {
@@ -530,7 +553,7 @@ window.FHRS_SPORTS_DATA = {
                     commitment: "2 practices/wk + weekend tournaments",
                     cost: "$$$",
                     location: "Main hub Monroe; occasional Shore pods at The Fort or Holmdel",
-                    url: "https://centraljerseyhawks.org",
+                    url: "https://www.centraljerseybasketball.com",
                     isRegional: true
                 },
                 {
@@ -605,8 +628,7 @@ window.FHRS_SPORTS_DATA = {
                     commitment: "1-2 sessions/wk",
                     cost: "$",
                     location: "Fair Haven Fields and Community Center",
-                    url: "https://fairhavenbaseball.org",
-                    secondaryUrl: { label: "TeamSnap Portal", url: "https://fairhavenrecbaseball.teamsnapsites.com/" }
+                    url: "https://fairhavenbaseball.org"
                 },
                 {
                     name: "Two River Little League (TRLL)",
@@ -784,7 +806,7 @@ window.FHRS_SPORTS_DATA = {
             comparisons: [
                 {
                     title: "RFH Boys vs. RFH Girls feeder differences",
-                    text: "Knollwood does not sponsor lacrosse, so RFH youth feeders carry players through 8th grade. Boys begin in Kindergarten via rfhboyslax.com. Girls start in 1st grade (no Kindergarten) via Rumson Recreation on a strict Jan 1 - Jan 31 window and require active USA Lacrosse membership (valid through June 15) for grades 3-8."
+                    text: "Knollwood does not sponsor lacrosse, so RFH youth feeders carry players through 8th grade. Boys begin in Kindergarten via rfhboyslax.org. Girls start in 1st grade (no Kindergarten) via Rumson Recreation on a strict Jan 1 - Jan 31 window and require active USA Lacrosse membership (valid through June 15) for grades 3-8."
                 },
                 {
                     title: "Additive club structure",
@@ -804,8 +826,8 @@ window.FHRS_SPORTS_DATA = {
                     commitment: "K-2 clinics; 3-8 practices + NJJLL or Jersey Shore games (Mar - June)",
                     cost: "$$",
                     location: "Fair Haven Fields, Rumson fields, RFH turf",
-                    url: "https://rfhboyslax.com",
-                    secondaryUrl: { label: "Alt Portal", url: "https://www.rfhboyslax.org" }
+                    url: "https://rfhboyslax.org",
+                    secondaryUrl: { label: "RFH HS Lax", url: "https://rfhboyslax.com" }
                 },
                 {
                     name: "RFH Girls Youth Lacrosse",
@@ -866,7 +888,7 @@ window.FHRS_SPORTS_DATA = {
                     commitment: "Indoor soft-ball fundamentals clinics (no travel teams)",
                     cost: "$$$",
                     location: "Forrestdale School Gym, 60 Forrest Ave, Rumson (~2 mi)",
-                    url: "https://swaxlax.com"
+                    url: "https://www.swaxlaxlacrosse.com"
                 },
                 {
                     name: "Team Monmouth (NJLT)",
@@ -887,11 +909,11 @@ window.FHRS_SPORTS_DATA = {
         {
             id: "football",
             name: "Football",
-            summary: "Bi-borough RFH Flag Football (run by Rumson Rec), Red Bank Gladiators flag, and RFH NJAYF tackle football.",
+            summary: "Bi-borough RFH Flag Football (run by Rumson Rec), Red Bank Gladiators and Just Sports Training flag programs, and RFH NJAYF tackle football.",
             comparisons: [
                 {
                     title: "Flag football options",
-                    text: "RFH Flag Football is administered by Rumson Recreation (not Fair Haven Rec) on a strict June 1 - July 15 window for Saturday fall play on RFH turf. Jersey Shore Gladiators at Count Basie Park in Red Bank adds a spring season and regional multi-town play."
+                    text: "RFH Flag Football is administered by Rumson Recreation (not Fair Haven Rec) on a strict June 1 - July 15 window for Saturday fall play on RFH turf. Jersey Shore Gladiators at Count Basie Park in Red Bank adds a spring season and regional multi-town play. Fair Haven Rec Soccer partner Just Sports Training also runs NFL Flag Football programs and Spring Break or YMCA flag football camps."
                 },
                 {
                     title: "Tackle football territorial rules",
@@ -927,7 +949,23 @@ window.FHRS_SPORTS_DATA = {
                     commitment: "Saturday 8-week sessions and regional play",
                     cost: "$$",
                     location: "Count Basie Park, 11 Henry St, Red Bank (~2.5 mi)",
-                    url: "https://jerseyshoregladiators.webador.com"
+                    url: "https://www.jerseyshoregladiators.com"
+                },
+                {
+                    name: "Just Sports Training Flag Football",
+                    subGroup: "Flag",
+                    grades: ["K-2", "3-5", "6-8"],
+                    gender: ["Co-ed"],
+                    seasons: ["Spring", "Summer", "Fall"],
+                    pathway: "studio-clinic",
+                    accessLabel: "Studio or clinic",
+                    registration: "Seasonal and school-break camp sign-ups",
+                    commitment: "NFL Flag Football programs, Spring Break camp, and YMCA flag camps",
+                    cost: "$$",
+                    location: "Red Bank, Greater Monmouth YMCA, and local fields (~2.5 mi)",
+                    url: "https://just-sport.org/nfl-flag-football",
+                    secondaryUrl: { label: "JST Home", url: "https://just-sport.org" },
+                    note: "Operated by Fair Haven Rec Soccer training partner Just Sports Training."
                 },
                 {
                     name: "Rumson-Fair Haven Youth Football",
@@ -970,7 +1008,9 @@ window.FHRS_SPORTS_DATA = {
                     commitment: "Practices + weekend Pop Warner games",
                     cost: "$$",
                     location: "Red Bank / Shamrock conference (~2.5 mi)",
-                    url: "https://saintjamespopwarner.com/"
+                    url: "https://www.mysaintjames.com",
+                    secondaryUrl: { label: "Pop Warner", url: "https://www.popwarner.com" },
+                    note: "Standalone Royals / Shamrock Football domain is offline; confirm seasonal tackle sign-ups via Saint James or New Jersey Shore Pop Warner."
                 },
                 {
                     name: "Shore Youth Football (Shore Blue Devils)",
@@ -1345,7 +1385,7 @@ window.FHRS_SPORTS_DATA = {
                     commitment: "Learn to Skate, Figure Skating, Tier II and Tier I AAA hockey",
                     cost: "$$$",
                     location: "214 Harmony Rd, Middletown (~4.5 mi)",
-                    url: "https://middletownsportscomplex.com",
+                    url: "https://www.middletownsc.com",
                     note: "Formerly Middletown Ice World."
                 }
             ]
@@ -2281,11 +2321,11 @@ window.FHRS_SPORTS_DATA = {
         {
             id: "multi-sport-clinics",
             name: "Multi-sport clinics",
-            summary: "Municipal Rec-N-Crew summer camp and contracted USA Sport Group multi-sport Squirts classes.",
+            summary: "Municipal Rec-N-Crew summer camp, Fair Haven Rec Soccer partner Just Sports Training multi-sport and school-break camps, and USA Sport Group Squirts classes.",
             comparisons: [
                 {
                     title: "Camp vs. vendor Squirts classes",
-                    text: "Rec-N-Crew is Fair Haven Borough Rec's municipal summer day camp (entering grades 1-3 at the Community Center, grades 4-8 at Fair Haven Fields; opens Feb). Multi-Sport Squirts is a vendor-run ages 3-5 movement program on municipal fields."
+                    text: "Rec-N-Crew is Fair Haven Borough Rec's municipal summer day camp (entering grades 1-3 at the Community Center, grades 4-8 at Fair Haven Fields; opens Feb). Fair Haven Rec Soccer partner Just Sports Training runs ages 4-7 Multi-Sport clinics, Summer Day and Beach Camps, and School's-Out camps (MLK Day, Presidents' Day, Spring Break, Columbus Day, NJ Teachers' Convention). Multi-Sport Squirts is a USA Sport Group ages 3-5 movement program on municipal fields."
                 }
             ],
             programs: [
@@ -2303,6 +2343,23 @@ window.FHRS_SPORTS_DATA = {
                     cost: "$$",
                     location: "Fair Haven Community Center (1-3) and Fair Haven Fields (4-8)",
                     url: "https://fairhavennj.leagueapps.com"
+                },
+                {
+                    name: "Just Sports Training (Multi-Sport Camps)",
+                    subGroup: "Partner camps",
+                    grades: ["Pre-K", "K-2", "3-5", "6-8"],
+                    gradeNote: "Ages 3-14 (Multi-Sport 4-7 + K-8 camps)",
+                    gender: ["Co-ed"],
+                    seasons: ["Year-round"],
+                    pathway: "studio-clinic",
+                    accessLabel: "Studio or clinic",
+                    registration: "Rolling seasonal and school-break sign-ups",
+                    commitment: "Multi-sport clinics, School's-Out camps (NJEA, MLK, Pres. Day, Spring Break), Summer and Beach camps",
+                    cost: "$$-$$$",
+                    location: "280 Route 35, Red Bank (~2.5 mi), YMCA, and local fields/beaches",
+                    url: "https://just-sport.org",
+                    secondaryUrl: { label: "School's Out Camps", url: "https://just-sport.org/schools-out-day-camps" },
+                    note: "Fair Haven Rec Soccer partner; covers soccer, flag football, basketball, tennis/pickleball, and agility games."
                 },
                 {
                     name: "USA Sport Group Squirts (FH Fields)",
@@ -2331,7 +2388,7 @@ window.FHRS_SPORTS_DATA = {
                     commitment: "Multi-sport and school's-out clinics (added non-res fee possible)",
                     cost: "$-$$",
                     location: "Oceanport (~2.5 mi)",
-                    url: "https://www.oceanportboro.com/recreation"
+                    url: "https://www.oceanportboro.com/departments/recreation"
                 }
             ]
         },
@@ -2474,7 +2531,7 @@ window.FHRS_SPORTS_DATA = {
                     commitment: "Little Rollers (4-5), Youth (6-10), Teens (10-16); wrestling takedown blend",
                     cost: "$$$",
                     location: "1071 Ocean Ave (inside Monmouth Squash & Swim), Sea Bright (~3 mi)",
-                    url: "https://movejiujitsu.com"
+                    url: "https://www.squashandswim.com/jiu-jitsu"
                 },
                 {
                     name: "Renzo Gracie Middletown",
@@ -2488,7 +2545,7 @@ window.FHRS_SPORTS_DATA = {
                     commitment: "Youth Brazilian Jiu-Jitsu and self-defense",
                     cost: "$$$",
                     location: "205 Harmony Rd, Middletown (~4.5 mi)",
-                    url: "https://renzogracieacademy.com/"
+                    url: "https://renzograciemiddletownmartialarts.com"
                 }
             ]
         },
@@ -2529,7 +2586,7 @@ window.FHRS_SPORTS_DATA = {
                     commitment: "English riding lessons",
                     cost: "$$$",
                     location: "151 Hockhockson Rd, Colts Neck (~8.5 mi)",
-                    url: "http://www.winwardequestrianllc.com/",
+                    url: "https://www.winwardequestrianllc.com/",
                     isRegional: true
                 },
                 {
@@ -2575,7 +2632,7 @@ window.FHRS_SPORTS_DATA = {
                     commitment: "English riding academy, IEA team options, showing",
                     cost: "$$$",
                     location: "64 Hominy Hill Rd, Colts Neck (~10 mi)",
-                    url: "https://www.sovereignequestrian.com/",
+                    url: "https://www.sovereignequestriannewjersey.com/",
                     isRegional: true
                 }
             ]
