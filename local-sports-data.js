@@ -139,15 +139,15 @@ window.FHRS_SPORTS_DATA = {
         {
             id: "soccer",
             name: "Soccer",
-            summary: "Inclusive in-town fall rec through Fair Haven Rec Soccer, partner clinics via Just Sports Training, and nearby MOSA and EDP travel clubs.",
+            summary: "Inclusive in-town fall rec through Fair Haven Rec Soccer paired with local skills clinics and nearby MOSA and EDP travel clubs.",
             comparisons: [
                 {
                     title: "In-town rec (Fair Haven Rec Soccer)",
                     text: "No-cut volunteer league. K-2 players meet Saturdays at Fair Haven Fields (30 min skills, 30 min small-sided scrimmages); grades 3-8 add 1 weeknight practice and Saturday NMSA games against Eatontown, Little Silver, Long Branch, Red Bank, Rumson, Shore, Shrewsbury, and Tinton Falls."
                 },
                 {
-                    title: "Partner clinics and technical training",
-                    text: "Fair Haven Rec Soccer partner Just Sports Training (Red Bank and local fields) runs year-round Pre-K through 8th grade soccer clinics, Coerver Footskills, Pre-Travel, school's-out camps, and FC Monmouth Academy / Summer Invitational teams. The Fort Athletic Club (CAT) and USA Sport Group offer additional skills classes."
+                    title: "Seasonal clinics and technical training",
+                    text: "Just Sports Training (Red Bank and local fields) runs year-round Pre-K through 8th grade soccer clinics, Coerver Footskills, Pre-Travel, school's-out camps, and FC Monmouth Academy / Summer Invitational teams. The Fort Athletic Club (CAT) and USA Sport Group offer additional skills classes."
                 },
                 {
                     title: "Community travel clubs",
@@ -199,7 +199,7 @@ window.FHRS_SPORTS_DATA = {
                 },
                 {
                     name: "Just Sports Training (JST Soccer)",
-                    subGroup: "Partner training",
+                    subGroup: "Training",
                     grades: ["Pre-K", "K-2", "3-5", "6-8"],
                     gradeNote: "Ages 3-14 (Pre-K - 8th)",
                     gender: ["Boys", "Girls", "Co-ed"],
@@ -211,8 +211,7 @@ window.FHRS_SPORTS_DATA = {
                     cost: "$$-$$$",
                     location: "Fair Haven area fields and 280 Route 35, Red Bank (~2.5 mi)",
                     url: "https://just-sport.org",
-                    secondaryUrl: { label: "Register", url: "https://just-sport.playbookapi.com/programs/register/" },
-                    note: "Fair Haven Rec Soccer partner; also youth training partner for FC Monmouth and Greater Monmouth YMCA."
+                    secondaryUrl: { label: "Register", url: "https://just-sport.playbookapi.com/programs/register/" }
                 },
                 {
                     name: "USA Sport Group Soccer (FH Fields)",
@@ -393,7 +392,7 @@ window.FHRS_SPORTS_DATA = {
                     location: "Red Bank and Monmouth County fields (~2.5-5 mi)",
                     url: "https://just-sport.org/fc-monmouth-academy",
                     secondaryUrl: { label: "Register", url: "https://just-sport.playbookapi.com/programs/register/" },
-                    note: "Operated by Fair Haven Rec Soccer partner Just Sports Training with semi-pro club FC Monmouth."
+                    note: "Operated by Just Sports Training with semi-pro club FC Monmouth."
                 }
             ]
         },
@@ -913,7 +912,7 @@ window.FHRS_SPORTS_DATA = {
             comparisons: [
                 {
                     title: "Flag football options",
-                    text: "RFH Flag Football is administered by Rumson Recreation (not Fair Haven Rec) on a strict June 1 - July 15 window for Saturday fall play on RFH turf. Jersey Shore Gladiators at Count Basie Park in Red Bank adds a spring season and regional multi-town play. Fair Haven Rec Soccer partner Just Sports Training also runs NFL Flag Football programs and Spring Break or YMCA flag football camps."
+                    text: "RFH Flag Football is administered by Rumson Recreation (not Fair Haven Rec) on a strict June 1 - July 15 window for Saturday fall play on RFH turf. Jersey Shore Gladiators at Count Basie Park in Red Bank adds a spring season and regional multi-town play. Just Sports Training also runs NFL Flag Football programs and Spring Break or YMCA flag football camps."
                 },
                 {
                     title: "Tackle football territorial rules",
@@ -963,9 +962,8 @@ window.FHRS_SPORTS_DATA = {
                     commitment: "NFL Flag Football programs, Spring Break camp, and YMCA flag camps",
                     cost: "$$",
                     location: "Red Bank, Greater Monmouth YMCA, and local fields (~2.5 mi)",
-                    url: "https://just-sport.org/nfl-flag-football",
-                    secondaryUrl: { label: "JST Home", url: "https://just-sport.org" },
-                    note: "Operated by Fair Haven Rec Soccer training partner Just Sports Training."
+                    url: "https://just-sport.org/flag-football",
+                    secondaryUrl: { label: "JST Home", url: "https://just-sport.org" }
                 },
                 {
                     name: "Rumson-Fair Haven Youth Football",
@@ -2321,11 +2319,11 @@ window.FHRS_SPORTS_DATA = {
         {
             id: "multi-sport-clinics",
             name: "Multi-sport clinics",
-            summary: "Municipal Rec-N-Crew summer camp, Fair Haven Rec Soccer partner Just Sports Training multi-sport and school-break camps, and USA Sport Group Squirts classes.",
+            summary: "Municipal Rec-N-Crew summer camp, Just Sports Training multi-sport and school-break camps, and USA Sport Group Squirts classes.",
             comparisons: [
                 {
                     title: "Camp vs. vendor Squirts classes",
-                    text: "Rec-N-Crew is Fair Haven Borough Rec's municipal summer day camp (entering grades 1-3 at the Community Center, grades 4-8 at Fair Haven Fields; opens Feb). Fair Haven Rec Soccer partner Just Sports Training runs ages 4-7 Multi-Sport clinics, Summer Day and Beach Camps, and School's-Out camps (MLK Day, Presidents' Day, Spring Break, Columbus Day, NJ Teachers' Convention). Multi-Sport Squirts is a USA Sport Group ages 3-5 movement program on municipal fields."
+                    text: "Rec-N-Crew is Fair Haven Borough Rec's municipal summer day camp (entering grades 1-3 at the Community Center, grades 4-8 at Fair Haven Fields; opens Feb). Just Sports Training runs ages 4-7 Multi-Sport clinics, Summer Day and Beach Camps, and School's-Out camps (MLK Day, Presidents' Day, Spring Break, Columbus Day, NJ Teachers' Convention). Multi-Sport Squirts is a USA Sport Group ages 3-5 movement program on municipal fields."
                 }
             ],
             programs: [
@@ -2346,7 +2344,7 @@ window.FHRS_SPORTS_DATA = {
                 },
                 {
                     name: "Just Sports Training (Multi-Sport Camps)",
-                    subGroup: "Partner camps",
+                    subGroup: "Clinics and camps",
                     grades: ["Pre-K", "K-2", "3-5", "6-8"],
                     gradeNote: "Ages 3-14 (Multi-Sport 4-7 + K-8 camps)",
                     gender: ["Co-ed"],
@@ -2359,7 +2357,7 @@ window.FHRS_SPORTS_DATA = {
                     location: "280 Route 35, Red Bank (~2.5 mi), YMCA, and local fields/beaches",
                     url: "https://just-sport.org",
                     secondaryUrl: { label: "School's Out Camps", url: "https://just-sport.org/schools-out-day-camps" },
-                    note: "Fair Haven Rec Soccer partner; covers soccer, flag football, basketball, tennis/pickleball, and agility games."
+                    note: "Covers soccer, flag football, basketball, tennis/pickleball, and agility games."
                 },
                 {
                     name: "USA Sport Group Squirts (FH Fields)",
